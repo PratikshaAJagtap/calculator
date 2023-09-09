@@ -1,0 +1,73 @@
+<html>
+<head>
+    <title> calculator </title>
+
+    <style>
+        .calci {
+            text-align: center;
+            border: 5px solid red;
+            padding: 10px;
+            margin-left: 550px;
+            margin-right: 550px;
+            padding-top: 50px;
+            background-color:black;
+        }
+    </style>
+</head>
+<div >
+    
+    <form name="form1" class="calci" action="calculator.html" method="POST">
+        <input type="text" name="answer" id="display"
+            style=" font-size:large; padding: 15px; border: 5px solid red; background-color:white;width: 80%;">
+        <br>
+        <br>
+        <input type="button" class="btnDesign" value="c" onclick="form1.answer.value+='  '"
+            style="padding: 15px; border: 5px solid red; background-color: lightcyan;font-size: larger;">
+        <input type="button" class="btnDesign" value="<"
+            onclick="form1.answer.value=form1.answer.value.substring(0,form1.answer.value.length*1-1)"
+            style="padding: 15px; border: 5px solid red;background-color: lightcyan; font-size: larger;">
+        <input type="button" class="btnDesign" value="00" onclick="form1.answer.value+='00'"
+            style="padding: 15px; border: 5px solid red;background-color: lightcyan; font-size: larger;">
+        <input type="button" class="operatorDesign" value="/" onclick="form1.answer.value+='/'"
+            style="padding: 15px; border: 5px solid red;background-color: lightcyan; font-size: larger;">
+        <br>
+        <br>
+        <input type="button" class="btnDesign" value="7" onclick="form1.answer.value+=' 7'"
+            style="padding: 15px; border: 5px solid  red;background-color:lightcyan; font-size: larger; ">
+        <input type="button" class="btnDesign" value="8" onclick="form1.answer.value+='8'"
+            style="padding: 15px; border: 5px solid  red;background-color: lightcyan; font-size: larger;">
+        <input type="button" class="btnDesign" value="9" onclick="form1.answer.value+='9'"
+            style="padding: 15px; border: 5px solid  red;background-color: lightcyan; font-size: larger;">
+        <input type="button" class="operatorDesign" value="*" onclick="form1.answer.value+='*'"
+            style="padding:15px; border: 5px solid  red;background-color: lightcyan; font-size: larger;">
+        <br>
+        <br>
+        <input type="button" class="btnDesign" value="4" onclick="form1.answer.value+='4'"
+            style="padding: 15px; border: 5px solid  red;background-color: lightcyan; font-size: larger;">
+        <input type="button" class="btnDesign" value="5" onclick="form1.answer.value+='5'"
+            style="padding: 15px; border: 5px solid  red; background-color: lightcyan; font-size: larger;">
+        <input type="button" class="btnDesign" value="6" onclick="form1.answer.value+='6'"
+            style="padding: 15px; border: 5px solid  red;background-color: lightcyan; font-size: larger;">
+        <input type="button" class="operatorDesign" value="-" onclick="form1.answer.value+='-'"
+            style="padding: 15px; border: 5px solid  red;background-color: lightcyan; font-size: larger;">
+        <br>
+        <br>
+        <input type="button" class="btnDesign" value="1" onclick="form1.answer.value+='1'"
+            style="padding: 15px; border: 5px solid  red;background-color: lightcyan;font-size: larger;">
+        <input type="button" class="btnDesign" value="2" onclick="form1.answer.value+='2'"
+            style="padding: 15px; border: 5px solid  red;background-color: lightcyan; font-size: larger;">
+        <input type="button" class="btnDesign" value="3" onclick="form1.answer.value+='3'"
+            style="padding: 15px; border: 5px solid red;background-color: lightcyan; font-size: larger;">
+        <input type="button" class="operatorDesign" value="+" onclick="form1.answer.value+='+'"
+            style="padding: 15px; border: 5px solid  red;background-color: lightcyan; font-size: larger;">
+        <br>
+        <br>
+        <input type="button" class="zero" value="0" onclick="form1.answer.value+='0'"
+            style="padding: 15px; border: 5px solid  red;background-color: lightcyan; font-size: larger;">
+        <input type="button" class="btnDesign" value="." onclick="form1.answer.value+='.'"
+            style="padding: 15px; border: 5px solid  red;background-color: lightcyan; font-size: larger;">
+        <input type="button" class="operatorDesign" value="ENTER" onclick="form1.answer.value=eval(form1.answer.value)"
+            style="padding: 15px; border: 5px solid wheat;background-color: green; font-size: larger;">
+        </form>
+        </div>
+</html>
